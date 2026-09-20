@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Jadwal Mengajar Kelas Informatika — Rizki Hidayat Dalimunthe, S.Kom</title>
+<style>
+:root {
+  --bg:#eef8ff; --panel:#ffffffd9; --blue:#2999e8; --blue2:#78c8f7;
+  --ink:#17324d; --muted:#6d879c; --line:#dcecf7; --soft:#e9f6ff;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);
+background:radial-gradient(circle at 15% 10%,#d9f2ff 0,transparent 28%),
+radial-gradient(circle at 90% 25%,#dceeff 0,transparent 30%),var(--bg);
+min-height:100vh;overflow-x:hidden}
+.bg-orb{position:fixed;border-radius:50%;filter:blur(2px);opacity:.45;pointer-events:none}
+.o1{width:180px;height:180px;background:#8ed5ff;left:-70px;top:35%}
+.o2{width:240px;height:240px;background:#b9ddff;right:-100px;bottom:5%}
+.container{max-width:1450px;margin:auto;padding:34px 28px 55px}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#ffffffee,#eff9ffff);
+border:1px solid #d9edf9;border-radius:28px;padding:32px 34px;margin-bottom:25px;
+box-shadow:0 18px 45px #8bb8d51f;animation:heroIn .75s ease both}
+.hero:after{content:"</>";position:absolute;right:30px;top:-18px;font:bold 150px/1 monospace;
+color:#dff2ff;transform:rotate(-8deg);z-index:0}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--soft);color:#1886cf;
+padding:8px 13px;border-radius:999px;font-weight:700;font-size:13px;letter-spacing:.4px;position:relative;z-index:1}
+h1{font-size:clamp(28px,4vw,48px);margin:15px 0 6px;letter-spacing:-1.5px;position:relative;z-index:1}
+.author{font-size:16px;color:var(--muted);position:relative;z-index:1}
+.author b{color:#287eaf}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.day-card{background:var(--panel);backdrop-filter:blur(12px);border:1px solid #dcecf7;border-radius:22px;
+overflow:hidden;box-shadow:0 12px 30px #7faac51c;animation:cardIn .7s cubic-bezier(.2,.8,.2,1) both;
+animation-delay:calc(var(--card) * 90ms + 180ms);transition:.25s ease}
+.day-card:hover{transform:translateY(-5px);box-shadow:0 18px 38px #4b9bd22a}
+.day-head{display:flex;align-items:center;gap:12px;padding:18px 18px 14px}
+.day-icon{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#2b9fe9,#8bd3fa);
+display:grid;place-items:center;color:white;font-size:20px;font-weight:800;box-shadow:0 7px 18px #399fdd35}
+.day-head h2{margin:0;font-size:20px} .day-sub{font-size:11px;color:#8aa1b2}
+.table-head,.row{display:grid;grid-template-columns:44px 1fr 1fr;gap:8px;align-items:center}
+.table-head{padding:9px 15px;background:#f2f9fd;color:#88a0b0;font-size:10px;font-weight:800;letter-spacing:.8px}
+.row{margin:0 10px;padding:10px 6px;border-bottom:1px solid var(--line);font-size:13px;animation:rowIn .5s ease both;
+animation-delay:calc(var(--card) * 90ms + var(--i) * 45ms + 260ms)}
+.row:last-child{border-bottom:0} .period{font-weight:800;color:#4e86a5;text-align:center}
+.time{color:#657f92;white-space:nowrap} .class{justify-self:end;background:#eaf6ff;color:#237eae;
+padding:5px 9px;border-radius:9px;font-weight:800;text-align:center;min-width:58px}
+.row.empty .class{background:#f6f8fa;color:#b0bdc6;font-weight:500}
+.footer{text-align:center;color:#8aa1b2;font-size:12px;margin-top:24px}
+@keyframes heroIn{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:none}}
+@keyframes cardIn{from{opacity:0;transform:translateY(20px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes rowIn{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+@media(max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.container{padding:18px 12px 35px}.hero{padding:24px 20px}.grid{grid-template-columns:1fr}.hero:after{font-size:100px;right:-5px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="bg-orb o1"></div><div class="bg-orb o2"></div>
+<main class="container">
+<header class="hero">
+  <div class="badge">💻 INFORMATIKA • WEEKLY SCHEDULE</div>
+  <h1>Jadwal Mengajar Kelas Informatika</h1>
+  <div class="author">By <b>Rizki Hidayat Dalimunthe, S.Kom</b></div>
+</header>
+<div class="grid">
+<section class="day-card" style="--card:0"><div class="day-head"><span class="day-icon">⌂</span><div><h2>Senin</h2><span class="day-sub">Jadwal Informatika</span></div></div><div class="table-head"><span>JP</span><span>WAKTU</span><span>KELAS</span></div><div class="row empty" style="--i:0"><div class="period">1</div><div class="time">07:30 - 08:10</div><div class="class">—</div></div><div class="row empty" style="--i:1"><div class="period">2</div><div class="time">08:10 - 08:50</div><div class="class">—</div></div><div class="row empty" style="--i:2"><div class="period">3</div><div class="time">08:50 - 09:30</div><div class="class">—</div></div><div class="row " style="--i:3"><div class="period">4</div><div class="time">09:45 - 10:25</div><div class="class">IX - 1</div></div><div class="row " style="--i:4"><div class="period">5</div><div class="time">10:25 - 11:05</div><div class="class">IX - 5</div></div><div class="row " style="--i:5"><div class="period">6</div><div class="time">11:20 - 12:00</div><div class="class">IX - 5</div></div><div class="row " style="--i:6"><div class="period">7</div><div class="time">12:00 - 12:40</div><div class="class">IX - 5</div></div></section><section class="day-card" style="--card:1"><div class="day-head"><span class="day-icon">⌁</span><div><h2>Selasa</h2><span class="day-sub">Jadwal Informatika</span></div></div><div class="table-head"><span>JP</span><span>WAKTU</span><span>KELAS</span></div><div class="row " style="--i:0"><div class="period">1</div><div class="time">07:30 - 08:10</div><div class="class">VIII - 3</div></div><div class="row " style="--i:1"><div class="period">2</div><div class="time">08:10 - 08:50</div><div class="class">VIII - 3</div></div><div class="row empty" style="--i:2"><div class="period">3</div><div class="time">08:50 - 09:30</div><div class="class">—</div></div><div class="row empty" style="--i:3"><div class="period">4</div><div class="time">09:45 - 10:25</div><div class="class">—</div></div><div class="row empty" style="--i:4"><div class="period">5</div><div class="time">10:25 - 11:05</div><div class="class">—</div></div><div class="row empty" style="--i:5"><div class="period">6</div><div class="time">11:20 - 12:00</div><div class="class">—</div></div><div class="row empty" style="--i:6"><div class="period">7</div><div class="time">12:00 - 12:40</div><div class="class">—</div></div></section><section class="day-card" style="--card:2"><div class="day-head"><span class="day-icon">◈</span><div><h2>Rabu</h2><span class="day-sub">Jadwal Informatika</span></div></div><div class="table-head"><span>JP</span><span>WAKTU</span><span>KELAS</span></div><div class="row " style="--i:0"><div class="period">1</div><div class="time">07:30 - 08:10</div><div class="class">IX - 1</div></div><div class="row " style="--i:1"><div class="period">2</div><div class="time">08:10 - 08:50</div><div class="class">IX - 1</div></div><div class="row " style="--i:2"><div class="period">3</div><div class="time">08:50 - 09:30</div><div class="class">IX - 2</div></div><div class="row " style="--i:3"><div class="period">4</div><div class="time">09:45 - 10:25</div><div class="class">IX - 2 + VIII - 3</div></div><div class="row " style="--i:4"><div class="period">5</div><div class="time">10:25 - 11:05</div><div class="class">IX - 2</div></div><div class="row empty" style="--i:5"><div class="period">6</div><div class="time">11:20 - 12:00</div><div class="class">—</div></div><div class="row empty" style="--i:6"><div class="period">7</div><div class="time">12:00 - 12:40</div><div class="class">—</div></div></section><section class="day-card" style="--card:3"><div class="day-head"><span class="day-icon">⌘</span><div><h2>Kamis</h2><span class="day-sub">Jadwal Informatika</span></div></div><div class="table-head"><span>JP</span><span>WAKTU</span><span>KELAS</span></div><div class="row " style="--i:0"><div class="period">1</div><div class="time">07:30 - 08:10</div><div class="class">VIII - 2</div></div><div class="row " style="--i:1"><div class="period">2</div><div class="time">08:10 - 08:50</div><div class="class">VIII - 2</div></div><div class="row " style="--i:2"><div class="period">3</div><div class="time">08:50 - 09:30</div><div class="class">VIII - 2</div></div><div class="row empty" style="--i:3"><div class="period">4</div><div class="time">09:45 - 10:25</div><div class="class">—</div></div><div class="row " style="--i:4"><div class="period">5</div><div class="time">10:25 - 11:05</div><div class="class">IX - 6</div></div><div class="row " style="--i:5"><div class="period">6</div><div class="time">11:20 - 12:00</div><div class="class">IX - 6</div></div><div class="row " style="--i:6"><div class="period">7</div><div class="time">12:00 - 12:40</div><div class="class">IX - 6</div></div></section><section class="day-card" style="--card:4"><div class="day-head"><span class="day-icon">◆</span><div><h2>Jumat</h2><span class="day-sub">Jadwal Informatika</span></div></div><div class="table-head"><span>JP</span><span>WAKTU</span><span>KELAS</span></div><div class="row empty" style="--i:0"><div class="period">1</div><div class="time">07:15 - 07:55</div><div class="class">—</div></div><div class="row " style="--i:1"><div class="period">2</div><div class="time">07:55 - 08:35</div><div class="class">IX - 3</div></div><div class="row " style="--i:2"><div class="period">3</div><div class="time">08:35 - 09:15</div><div class="class">IX - 3</div></div><div class="row " style="--i:3"><div class="period">4</div><div class="time">09:30 - 10:10</div><div class="class">IX - 3</div></div><div class="row empty" style="--i:4"><div class="period">5</div><div class="time">10:10 - 10:50</div><div class="class">—</div></div><div class="row empty" style="--i:5"><div class="period">6</div><div class="time">10:50 - 11:30</div><div class="class">—</div></div></section><section class="day-card" style="--card:5"><div class="day-head"><span class="day-icon">◇</span><div><h2>Sabtu</h2><span class="day-sub">Jadwal Informatika</span></div></div><div class="table-head"><span>JP</span><span>WAKTU</span><span>KELAS</span></div><div class="row empty" style="--i:0"><div class="period">1</div><div class="time">07:30 - 08:10</div><div class="class">—</div></div><div class="row empty" style="--i:1"><div class="period">2</div><div class="time">08:10 - 08:50</div><div class="class">—</div></div><div class="row empty" style="--i:2"><div class="period">3</div><div class="time">08:50 - 09:30</div><div class="class">—</div></div><div class="row empty" style="--i:3"><div class="period">4</div><div class="time">09:45 - 10:25</div><div class="class">—</div></div><div class="row " style="--i:4"><div class="period">5</div><div class="time">10:25 - 11:05</div><div class="class">IX - 4</div></div><div class="row " style="--i:5"><div class="period">6</div><div class="time">11:20 - 12:00</div><div class="class">IX - 4</div></div><div class="row " style="--i:6"><div class="period">7</div><div class="time">12:00 - 12:40</div><div class="class">IX - 4</div></div></section>
+</div>
+<div class="footer">Desain bernuansa biru pastel • Animasi lembut • Siap dibuka di browser / layar kelas</div>
+</main>
+</body>
+</html>
